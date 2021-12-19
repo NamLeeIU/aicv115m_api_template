@@ -7,8 +7,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.action == "train":
-        from modules.example_train import train
+        from modules.train import train
         train()
     if args.action == "submit":
-        from modules.example_submit import create_submission
+        from modules.submit import create_submission
         create_submission()
